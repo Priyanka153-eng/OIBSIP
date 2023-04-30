@@ -1,99 +1,68 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-}
-
 body{
-    background-color: turquoise;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("silver.jpg");  
     height: 100vh;
-    text-align: center;
-   
-
-}
-
-#calcTemp{
-    padding: 29px 67px;
-    min-height: 290px;
-    background-color: rgb(34, 127, 139);
-    box-shadow: rgba(0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-
-}
-
-label{
-    font-size: 30px;
-    line-height: 78px;
-
-}
-
-#temp{
-    width: 110px;
-    height: 34px;
-    border-radius: 5px;
-   margin: 20px;
-    font-size: 18px;
-    font-weight: 500;
-    border: none;
-    outline: none;
+    background-size: cover;
+    background-position: center;
     
+
+}
+header{
+    font-size: small;
     
 }
-#temp_diff{
-width: 110px;
-    height: 34px;
-    border-radius: 5px;
-   margin: 20px;
-    font-size: 18px;
-    font-weight: 500;
-    border: none;
-    outline: none;
-    
+ul{
+    list-style-type: none;
+    float: right;
 }
 
-#submit{
-    width: 100px;
-    border-radius: 5px;
-    margin: 30px 0 20px 0;
-    font-size: 18px;
-    background-color: rgb(218 229 220);
-    padding: 5px;
-    transition: all 0.5s ease;
- 
-
+ul li {
+    display: inline;
+}
+ul li a{
+    text-decoration: none;
+    padding: 1px 10px;
+    border: 0.5px solid transparent;
+    color: white;
+    transition: 0.6s ease;
 }
 
-#submit:hover{
-    background-color: #ccc;
-    cursor: pointer;
-
+ul li a:hover{
+    background-color: white;
+    color: black;
 }
-
-#result{
-    font-size: 27px;
-    color: aliceblue;
+ul li.active a{
+    background-color: white;
+    color: black;
 }
-
-.temperature{
-    color: aliceblue;
+.logo img{
+    float: left;
+    width: 50px;
+    height: 50;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    color: white;
+    font-size: 70px;
+}
+.button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
